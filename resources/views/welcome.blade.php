@@ -3,7 +3,7 @@
 @section('content')
     <!-- Banner -->
     <div id="particles-js">
-        <section style="text-align: center;
+        <section id="banner" style="text-align: center;
     margin: auto;
     position: absolute;
     left: 0;
@@ -13,48 +13,43 @@
     height: 148px;">
             <div class="content">
                 <header>
-                    <h2>The future has landed</h2>
-                    <p>And there are no hoverboards or flying cars.<br />
-                        Just apps. Lots of mother flipping apps.</p>
+                    <h2>SOS VR International Contest</h2>
+                    <p style="text-align: center;">Some description<br />
+                        Another description!!</p>
                 </header>
+                <span class="image"><img src="images/pic01.jpg" alt=""></span>
             </div>
         </section>
     </div>
 
-    <!-- One -->
-    <section id="one" class="spotlight style1 bottom">
+    <!-- contest Information -->
+    <section id="contest" class="spotlight style1 bottom">
+        <!-- Scheduling image -->
         <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+
         <div class="content">
             <div class="container">
                 <div class="row">
                     <div class="4u 12u$(medium)">
                         <header>
-                            <h2>Odio faucibus ipsum integer consequat</h2>
-                            <p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+                            <h2>Title</h2>
+                            <p>Description</p>
                         </header>
                     </div>
                     <div class="4u 12u$(medium)">
-                        <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                            Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                            nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-                            augue varius tempus lobortis porttitor accumsan consequat
-                            adipiscing lorem dolor.</p>
+                        <p>Some stuff about the contest itself, how it is gonna be held and more information like that.</p>
                     </div>
                     <div class="4u$ 12u$(medium)">
-                        <p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                            adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-                            Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-                            mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-                            ipsum dolor nullam.</p>
+                        <p>Timing and schedule goes here. When you are doing what?</p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#two" class="goto-next scrolly">Next</a>
+        <a href="#organizers" class="goto-next scrolly">Next</a>
     </section>
 
     <!-- Two -->
-    <section id="two" class="spotlight style2 right">
+    <section id="#organizers" class="spotlight style2 right">
         <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
         <div class="content">
             <header>
@@ -89,8 +84,8 @@
     <section id="four" class="wrapper style1 special fade-up">
         <div class="container">
             <header class="major">
-                <h2>Accumsan sed tempus adipiscing blandit</h2>
-                <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+                <h2>Organizers</h2>
+                <p>Or maybe sponsers with their logo!</p>
             </header>
             <div class="box alt">
                 <div class="row uniform">
@@ -135,18 +130,43 @@
     </section>
 
     <!-- Five -->
-    <section id="five" class="wrapper style2 special fade">
+    <section id="subscribe" class="wrapper style2 special fade">
         <div class="container">
             <header>
-                <h2>Magna faucibus lorem diam</h2>
-                <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+                <h2>Let us inform you!</h2>
+                <p>You can subscribe and give us your mail and just wait for the good news!</p>
             </header>
-            <form method="post" action="#" class="container 50%">
+            <form method="post" action="{{ route('app::subscribe') }}" class="container 50%">
                 <div class="row uniform 50%">
-                    <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                    <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+                    <div class="8u 12u$(xsmall)"><input type="email" name="email" id="subscribe-email" placeholder="Your Email Address" /></div>
+                    <div class="4u$ 12u$(xsmall)"><input type="submit" value="Subscribe" class="fit special" id="subscribe-submit" onclick="sendSubcription()"/></div>
                 </div>
             </form>
         </div>
     </section>
 @endsection
+
+{{--@push('scripts')--}}
+    {{--<script type="text/javascript">--}}
+        {{--function sendSubcription() {--}}
+            {{--debugger;--}}
+            {{--var email = $('#subscribe-email').val();--}}
+            {{--$.ajax({--}}
+                {{--url : "{!! route('contest::register') !!}",--}}
+                {{--type : "POST",--}}
+                {{--data : {--}}
+                    {{--"email" : email,--}}
+                {{--},--}}
+                {{--beforeSend : function (xhr, stgs) {--}}
+
+                {{--},--}}
+                {{--success : function (result,status,xhr) {--}}
+
+                {{--},--}}
+                {{--error : function (xhr,status,error) {--}}
+
+                {{--}--}}
+            {{--});--}}
+        {{--}--}}
+    {{--</script>--}}
+{{--@endpush--}}

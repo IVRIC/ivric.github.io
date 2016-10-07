@@ -4,10 +4,10 @@
         <ul>
             <li><a href="{{ route('app::index') }}">Home</a></li>
             <li>
-                <a href="#">About</a>
+                <a href="#contest">About</a>
                 <ul>
-                    <li><a href="left-sidebar.html">The Contest</a></li>
-                    <li><a href="right-sidebar.html">Organizers</a></li>
+                    <li><a href="#contest">The Contest</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
                     {{--<li><a href="no-sidebar.html">No Sidebar</a></li>--}}
                     {{--<li>--}}
                         {{--<a href="#">Submenu</a>--}}
@@ -20,8 +20,8 @@
                     {{--</li>--}}
                 </ul>
             </li>
-            <li><a href="elements.html">Elements</a></li>
-            <li><a href="#" class="button special">Sign Up</a></li>
+            <li><a href="{{ route('pages::faq') }}">FAQ</a></li>
+            <li><a href="#subscribe" class="button special">Sign Up</a></li>
         </ul>
     </nav>
 </header>

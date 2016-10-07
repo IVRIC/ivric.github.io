@@ -178,6 +178,17 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * IDE HELPER
+         */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        /*
+         * Moloquent (MongoDB) Provider
+         */
+//        Moloquent\MongodbServiceProvider::class,
+//        Moloquent\Auth\PasswordResetServiceProvider::class,
+
     ],
 
     /*
