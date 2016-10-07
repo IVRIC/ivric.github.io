@@ -3,19 +3,23 @@
 @section('content')
     <!-- Banner -->
     <div id="particles-js">
-
+        <section style="text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 148px;">
+            <div class="content">
+                <header>
+                    <h2>The future has landed</h2>
+                    <p>And there are no hoverboards or flying cars.<br />
+                        Just apps. Lots of mother flipping apps.</p>
+                </header>
+            </div>
+        </section>
     </div>
-    <section id="banner">
-        <div class="content">
-            <header>
-                <h2>The future has landed</h2>
-                <p>And there are no hoverboards or flying cars.<br />
-                    Just apps. Lots of mother flipping apps.</p>
-            </header>
-            <span class="image"><img src="images/pic01.jpg" alt="" /></span>
-        </div>
-        <a href="#one" class="goto-next scrolly">Next</a>
-    </section>
 
     <!-- One -->
     <section id="one" class="spotlight style1 bottom">
