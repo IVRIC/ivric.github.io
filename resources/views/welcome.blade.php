@@ -13,7 +13,7 @@
     height: 148px;">
         <div class="content">
             <header>
-                <h2>SOS VR International Contest</h2>
+                <h2>International Virtual Robot Intelligence Competition</h2>
                 <p style="text-align: center;">Some description<br/>
                     Another description!!</p>
             </header>

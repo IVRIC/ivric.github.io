@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'SOS VR',
+    'name' => 'International Virtual Robot Intelligence 2016',
 
     /*
     |--------------------------------------------------------------------------

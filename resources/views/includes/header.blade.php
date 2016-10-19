@@ -1,5 +1,5 @@
 <header id="header">
-    <h1 id="logo"><a href="{{ route('app::index') }}">SOS VR</a></h1>
+    <h1 id="logo"><a href="{{ route('app::index') }}">IVRIC</a></h1>
     <nav id="nav">
         <ul>
             <li><a href="{{ route('app::index') }}">Home</a></li>
