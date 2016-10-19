@@ -8,6 +8,6 @@
         {{--<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>--}}
     </ul>
     <ul class="copyright">
-        <li>&copy; <a href="http://ceit-ssc.ir">Student Scientific Chapter</a> of <a href="http://aut.ac.ir">Amirkabir University of Technology</a>. All rights reserved.</li>
+        <li>&copy; <a href="http://sosvr.github.io">Cognitive Robotics Lab</a> and <a href="http://ceit-ssc.ir">Student Scientific Chapter</a> of <a href="http://aut.ac.ir">Amirkabir University of Technology</a>. All rights reserved.</li>
     </ul>
 </footer>
