@@ -6,4 +6,12 @@
 @import "variables";
 
 // Bootstrap
+//noinspection CssUnknownTarget
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Template
+@import "template/main";
+@import "template/ie8";
+@import "template/ie9";
+
+@import "landing/landing";

@@ -12,13 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.landing.page');
 })->name('app::index');
 
+Route::get('/sajjad', function (){
+    return view('test');
+});
 Route::get('/FAQ', 'PagesController@showFrequentlyAskedQuestions')->name('pages::faq');
-Route::get('/2016/register', 'ContestController@register')->name('contest::register');
 Route::post('/subscribe', 'PagesController@storeSubscribedEmail')->name('app::subscribe');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
