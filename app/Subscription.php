@@ -12,5 +12,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Subscription extends Model
 {
-    protected $fillable = ['email'];
+    protected $guarded = [];
+    protected $table = 'subs';
 }

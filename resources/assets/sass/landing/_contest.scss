@@ -1,0 +1,84 @@
+#contest {
+  .content {
+    background-color: #3A506B;
+  }
+  .timeline {
+    .tm-item {
+      &:first-child {
+        .d-border {
+          box-shadow: 0 0 0 5px hsl(191, 100%, 70%), 0 0 0 12px hsl(191, 100%, 50%);
+        }
+      }
+      &:nth-child(2) {
+        .d-border {
+          //	#FAD6D6 , rgb(250, 214, 214) , hsl(0, 78%, 91%)
+          box-shadow: 0 0 0 5px hsl(0, 78%, 91%), 0 0 0 12px hsl(0, 78%, 70%);
+        }
+      }
+      &:nth-child(3) {
+        .d-border {
+          //	#D7FAD7 , rgb(215, 250, 215) , hsl(0, 78%, 91%)
+          box-shadow: 0 0 0 5px hsl(120, 78%, 91%), 0 0 0 12px hsl(120, 78%, 70%);
+        }
+      }
+      .d-border {
+        filter: grayscale(100%);
+        transition: all 200ms ease-in-out;
+        border-radius: 100%;
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(206, 213, 216, .4);
+        margin: 0 auto;
+        &:hover, &.active {
+          filter: grayscale(0%);
+          .image-container, .image-container img {
+            width: 70%;
+          }
+          .text-box {
+            margin-top: .5rem;
+            font-size: 1.5rem;
+          }
+        }
+        .image-container, .image-container img {
+          transition: all 1000ms ease;
+          text-align: center;
+          width: 80%;
+        }
+        .text-box {
+          transition: all 1000ms ease;
+          font-size: 0;
+        }
+
+      }
+    }
+  }
+  .time-time{
+    margin-top: 2rem;
+    .tt-item{
+      display: flex;
+      justify-content: center;
+      margin: 0 0 1.5rem 0 !important;
+      font-size: 1.5rem;
+    }
+  }
+  .texts {
+    margin-top: 5rem;
+    .p-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        max-width: 5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        padding-top: .5rem;
+        border-top: 2px solid #D7CBC7;;
+      }
+    }
+  }
+}

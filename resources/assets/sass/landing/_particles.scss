@@ -9,17 +9,34 @@
     left: 0;
     bottom: 0;
     background-color: transparent;
-    .content{
+    .first-content{
       display: flex;
       justify-content: space-around;
-      header{
-
-      }
       .image-container{
         max-width: 20rem;
         img{
           width: 100%;
         }
+      }
+    }
+    .second-content{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #D7CBC7;
+      .image-container{
+        max-width: 15rem;
+        img{
+          width: 100%;
+        }
+      }
+      .slogan{
+        font-size: 3rem;
+        margin-top: 5rem;
+      }
+      .slogan:first-letter{
+        font-size: 3.5rem;
+        font-weight: 600;
       }
     }
   }
